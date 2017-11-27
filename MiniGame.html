@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ye's JavaScript Practice</title>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width,initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+	<script src="javascript/p5.min.js"></script>
+	<script src="javascript/addons/p5.dom.min.js"></script>
+	<script src="javascript/addons/p5.sound.min.js"></script>
+	<script src="javascript/GamePong.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/columnLayout.css">
+</head>
+<body>
+	<header>
+    	<h1>Ye's Javascript Practices</h1>
+    	<p>A code newbie is learning to code :)</p>
+  	</header>
+
+  	<div class="navbar">
+        <a href="">About</a>
+        <div class="dropdown">
+          <button href="#" class="dropdownBtn">Practices</button>
+          <div class="dropdownContent">
+            <a href="index.html">String Functions</a>
+            <a href="MiniGame.html">Mini Games</a>
+          </div>
+        </div>
+  	</div>
+
+  	<!-- The introduction of the game -->
+  	<div id="introContent">
+	  	<div class="gameIntro">
+        <div class="gamename">
+  	  		<h2>The Pong</h2>
+  	  		<p>Pong is one of the earliest computer games that ever created. It is a table tennis sports game featuring simple two-dimensional graphics. Here I am using p5.js to remake it.</p>
+        </div>
+	  		<div class="howToPlay">
+	  			<h4>How to Play</h4>
+	  			<p>The game is for two players. The left player will use keyboard W and S to control the paddle, while the right player will use the P and L keys. The ball will start flying from the center. 
+	  			</p>
+	  		</div>
+<!-- 	  		<button>Start Game</button> -->
+	  	</div>
+  	</div>
+
+  	<!-- where the game is positioned -->
+  	<div id="playBtn"></div>
+  	<div id="pongGamePlay"></div>
+
+
+  	<script src="javascript/pg.js"></script>
+</body>
+</html>

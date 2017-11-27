@@ -1,0 +1,295 @@
+/*MAIN CSS*/
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	font-family: 'Abel',Helvetica,Arial,freesans,sans-serif;
+	background-color: #DEF2F1;
+}
+
+/*Header Styles*/
+header{
+	padding: 20px;
+	background-color: #3AAFA9;
+	text-align: center;
+}
+
+header h1{
+	color: #FEFFFF;
+}
+header p{
+	color: #17252A;
+}
+
+/*Navigation Bar Styles*/
+.navbar{
+	overflow: hidden;
+	background-color: #17252A;
+}
+
+.navbar a{
+	float: left;
+	font-size: 1.2em;
+	color: #DEF2F1;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar a:hover{
+	background-color: #DEF2F1;
+	color: #17252A;
+}
+
+/*Dropdown Button*/
+
+
+.dropdown{
+	float: left;
+/*	overflow: hidden;*/
+}
+
+.dropdown .dropdownBtn{
+	font-family: 'Abel';
+	font-size: 1.2em;
+	border:none;
+	color: #DEF2F1;
+	padding: 14px 16px;
+	background-color: #17252A;
+}
+
+.dropdown:hover .dropdownBtn{
+	background-color: #DEF2F1;
+	color: #17252A;
+}
+
+.dropdownContent{
+	display: none;
+	position: absolute;
+	background-color: #3AAFA9;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.dropdownContent a{
+	float: none;
+	width: 100%;
+	display: block;
+	text-align: left;
+}
+
+.dropdownContent a:hover{
+	color: #FEFFFF;
+	background-color: #2B7A78;
+}
+
+.dropdown:hover .dropdownContent{
+	display: block;
+}
+
+
+/*Column Layout*/
+.wrapper{
+	clear: both;
+}
+.columns{
+	float: left;
+	display: inline-block;
+	width: 31.333%;
+	margin:1%;
+}
+
+@media(max-width: 960px){
+	.columns{
+	width: 48%;
+	margin: 1%;
+	}
+}
+
+@media(max-width: 600px){
+	.columns{
+		width: 98%;
+		margin: 1%;
+	}
+
+	.navbar a, .dropdownContent a{
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid #FEFFFF;
+	}
+	.dropdown, .dropdown button {
+		display: block;
+		width: 100%;
+	}
+	.dropdownContent{
+		width: 100%;
+	}
+}
+
+/*Practice boards*/
+
+.practice{
+	display: inline-block;
+	background-color: #FEFFFF;
+	margin: 0 0 1em;
+	width: 100%;
+}
+
+.practice h4{
+/*	border-bottom: 1px solid #3AAFA9;*/
+	padding: 16px;
+	font-size: 1.5em;
+}
+
+.practiceContent{
+	padding: 0 16px 16px 16px;
+}
+
+.practiceContent p{
+	padding-left: 12px;
+	border-left: 5px solid #17252A;
+	font-size: 1em;
+}
+
+.practiceContent input{
+	display: inline-block;
+	padding: 16px;
+	width: 100%;
+	height: 3em;
+	font-family: 'Abel',Helvetica,Arial,freesans,sans-serif;
+	background-color: #DEF2F1;
+	border:none;
+	font-size: 100%;
+	overflow: scroll;
+}
+
+.practiceContent button{
+	display: block;
+	width: 100%;
+	padding: 12px;
+	border: none;
+	background-color: #2B7A78;
+	color: #FEFFFF;
+	text-decoration: none;
+	text-align: center;
+	font-size: 100%;
+	cursor: pointer;
+}
+
+.showResult {
+	min-height: 3em ;
+	height: auto;
+	background-color: #f0f5f5;
+	color: #666666;
+	padding: 16px;
+	font-size: 100%;
+	line-height: 1em;
+	overflow: auto;
+}
+
+.practiceContent .showCodeBtn{
+	margin-top: 24px;
+	display: inline-block;
+	width: 100%;
+	padding: 12px;
+	border: none;
+	background-color: #3AAFA9;
+	color: #FEFFFF;
+	text-decoration: none;
+	text-align: center;
+	font-size: 100%;
+	cursor: pointer;
+}
+
+#Prct1Code, #Prct2Code, #Prct3Code,#Prct4Code,#Prct5Code,#Prct6Code,
+#Prct7Code, #Prct8Code,#Prct9Code,#Prct10Code{
+	display: none;
+}
+
+.showCode .fullSrnBtn{
+	margin: 0;
+	background-color: #696969;
+}
+
+.showCode .closeBtn{
+	background-color: #696969;
+	display: none;
+	padding: 0;
+	width: 2em;
+	height: 2em;
+	float: right;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+.gameIntro{
+	width: 70%;
+	margin: 5em auto;
+}
+
+.gamename{
+	width: 100%;
+}
+
+.gamename h2{
+	width: 30%;
+	margin: 0 5% 0 0;
+	display: inline-block;
+	width: 25%;
+	float: left;
+	font-size: 300%;
+	padding: 0 0 0 5%;
+}
+
+.gamename p{
+	margin: 0;
+	width: 65%;
+	display: inline-block;
+	font-size: 120%;
+	padding-left: 5%;
+	border-left: 5px solid #17252A;
+	color: #2B7A78;
+}
+
+@media (max-width: 600px){
+	.gamename h2{
+		width: 100%;
+		margin-bottom: 5%;
+		padding: 0;
+	}
+	.gamename p{
+		width: 100%;
+	}
+}
+
+.howToPlay{
+	clear: left;
+	display: block;
+	margin-top: 10%;
+	background-color: #FEFFFF;
+	padding: 5%;
+	border-radius: 1em;
+}
+
+.howToPlay h4{
+	font-size: 150%;
+	color: #3AAFA9;
+	margin: 0;
+}
+
+.howToPlay p{
+	font-size: 120%;
+	color: #17252A;
+}
+
+
+#pongGamePlay, #playBtn{
+	display: flex;
+	min-width: 600px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 5em;
+}
+
+
+
