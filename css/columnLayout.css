@@ -99,14 +99,14 @@ header p{
 	margin:1%;
 }
 
-@media(max-width: 960px){
+/*@media screen and (max-width: 800px){
 	.columns{
 	width: 48%;
 	margin: 1%;
 	}
-}
+}*/
 
-@media(max-width: 600px){
+@media screen and (max-width: 800px){
 	.columns{
 		width: 98%;
 		margin: 1%;
@@ -251,7 +251,7 @@ header p{
 	color: #2B7A78;
 }
 
-@media (max-width: 600px){
+@media screen and (max-width: 800px){
 	.gamename h2{
 		width: 100%;
 		margin-bottom: 5%;
