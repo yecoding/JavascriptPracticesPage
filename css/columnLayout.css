@@ -29,11 +29,14 @@ header p{
 }
 
 .navbar a{
-	float: left;
+	display: block;
+	width: 100%;
 	font-size: 1.2em;
 	color: #DEF2F1;
 	padding: 14px 16px;
 	text-decoration: none;
+	text-align: center;
+	border-bottom: 1px solid #FEFFFF
 }
 
 .navbar a:hover{
@@ -43,12 +46,6 @@ header p{
 
 /*Dropdown Button*/
 
-
-.dropdown{
-	float: left;
-/*	overflow: hidden;*/
-}
-
 .dropdown .dropdownBtn{
 	font-family: 'Abel';
 	font-size: 1.2em;
@@ -56,6 +53,8 @@ header p{
 	color: #DEF2F1;
 	padding: 14px 16px;
 	background-color: #17252A;
+	display: block;
+	width: 100%;
 }
 
 .dropdown:hover .dropdownBtn{
@@ -65,6 +64,7 @@ header p{
 
 .dropdownContent{
 	display: none;
+	width: 100%;
 	position: absolute;
 	background-color: #3AAFA9;
 	min-width: 160px;
@@ -75,7 +75,7 @@ header p{
 	float: none;
 	width: 100%;
 	display: block;
-	text-align: left;
+	text-align: center;
 }
 
 .dropdownContent a:hover{
@@ -95,28 +95,42 @@ header p{
 .columns{
 	float: left;
 	display: inline-block;
-	width: 31.333%;
-	margin:1%;
+	width: 98%;
+	margin: 1%;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (min-width: 900px){
 	.columns{
-		width: 98%;
-		margin: 1%;
+		width: 31.333%;
+		margin:1%;
 	}
 
-	.navbar a, .dropdownContent a{
-		width: 100%;
-		text-align: center;
-		border-bottom: 1px solid #FEFFFF;
+	.navbar a, .dropdown{
+		display: inline-block;
+		float: left;
+		text-align: left;
+		border:none;
 	}
-	.dropdown, .dropdown button {
+
+	.navbar a{
+		width: 4em;
+	}
+
+	.dropdown, .dropdownContent, .dropdown button{
+		width: 10em;
+	}
+
+	.dropdown button{
+		text-align: left;
+	}
+
+	.dropdownContent a{
+		clear: left;
 		display: block;
 		width: 100%;
 	}
-	.dropdownContent{
-		width: 100%;
-	}
+
+
 }
 
 /*Practice boards*/
@@ -225,18 +239,15 @@ header p{
 }
 
 .gamename h2{
-	width: 30%;
-	margin: 0 5% 0 0;
-	display: inline-block;
-	width: 25%;
-	float: left;
+	width: 100%;
+	margin: 0 5% 5% 0;
 	font-size: 300%;
-	padding: 0 0 0 5%;
+	padding: 0;
 }
 
 .gamename p{
 	margin: 0;
-	width: 65%;
+	width: 100%;
 	display: inline-block;
 	font-size: 120%;
 	padding-left: 5%;
@@ -244,14 +255,16 @@ header p{
 	color: #2B7A78;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (min-width: 900px){
 	.gamename h2{
-		width: 100%;
-		margin-bottom: 5%;
-		padding: 0;
+		display: inline-block;
+		width: 25%;
+		float: left;
+		margin: 0 5% 0 0;
+		padding: 0 0 0 5%;
 	}
 	.gamename p{
-		width: 100%;
+		width: 65%;
 	}
 }
 
