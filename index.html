@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en">
 <head>
   <title>Ye's JavaScript Practice</title>
   <meta charset="utf-8">
-  <meta name="viewpoint" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="css/columnLayout.css">
   <link rel="stylesheet" type="text/css" href="css/prism.css">
@@ -18,7 +18,7 @@
   <div class="navbar">
         <a href="">About</a>
         <div class="dropdown">
-          <button href="#" class="dropdownBtn">Practices</button>
+          <button class="dropdownBtn">Practices</button>
           <div class="dropdownContent">
             <a href="index.html">String Functions</a>
             <a href="MiniGame.html">Mini Games</a>
@@ -116,7 +116,7 @@ function swapFandL(stringInputID, stringOutputID){
 
     var middle = inputText.slice(1, (inputText.length - 1));
 
-    if(inputText.length<=1){
+    if(inputText.length&le;1){
       document.getElementById(stringOutputID).innerHTML = inputText;
     }else{
       document.getElementById(stringOutputID).innerHTML = newStart + middle + newEnd;
@@ -155,7 +155,7 @@ function palindromStr(stringInputID, stringOutputID){
 
     else{
       var paliCnfrm = true;
-      for(i=0; i<=(Math.floor(inputStr.length/2)-1);i++){
+      for(i=0; i&le;(Math.floor(inputStr.length/2)-1);i++){
         if(inputStr[i] != inputStr[(inputStr.length-1-i)]){
           paliCnfrm = false;
           break;
@@ -250,11 +250,11 @@ function allCharacters(stringInputID, stringOutputID){
   }else if(inputText6.length == 1){
         document.getElementById(stringOutputID).innerHTML = inputText6;
   }else{
-        for (i=0;i<=inputText6.length-1;i++){
+        for (i=0;i&le;inputText6.length-1;i++){
 
           // test if strOuput already has the character
           var alreadyCollected = false;
-          for (k = 0; k < strOutput.length; k++){
+          for (k=0; k&lt;strOutput.length; k++){
             if(inputText6[i] == strOutput[k]){
               alreadyCollected = true;
             }
@@ -538,9 +538,8 @@ alphabet = {
       </div>
     
     </div>
-  </div>
 
   <script src="javascript/pg.js"></script>
-  <script type="text/javascript" src="javascript/prism.js"></script>
+  <script src="javascript/prism.js"></script>
 </body>
 </html>
