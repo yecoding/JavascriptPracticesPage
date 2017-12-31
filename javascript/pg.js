@@ -1,3 +1,15 @@
+//Toggle Menu
+var showmenu = false;
+function toggleMenu() {
+	var navbar = document.getElementById('navbar');
+	if(!showmenu){
+		navbar.style.display = 'block';
+	}else{
+		navbar.style.display = 'none';
+	}
+	showmenu = !showmenu;
+}
+
 //Show Code function
 
 function showCode(btnID, divID){
@@ -68,27 +80,6 @@ function closeCodeBoard(openBtnID, closeBtnID, divID,codeID){
 
 }
 
-
-// Enable all Show Code Button
-// var allCodeBtn = document.getElementsByClassName('showCodeBtn');
-// var allCodeDiv = document.getElementsByClassName('showCode');
-//  funArray = [];
-// for(i=0;i<2;i++){
-// 	var codeBtnID = allCodeBtn[i].id;
-// 	var codeDivID = allCodeDiv[i].id;
-// 	console.log(codeBtnID + codeDivID);
-// 	var showBtn = document.getElementById(codeBtnID);
-// 	console.log(showBtn);
-//     if (i == 0){
-//      showBtn.addEventListener('click', function(){showCode(allCodeBtn[i].id, allCodeDiv[i].id)});
-//      showBtn.click();
-//      showBtn.click();
-//     }else{
-// 	 showBtn.addEventListener('click', function(){showCode(allCodeBtn[i].id, allCodeDiv[i].id)});    	
-//      showBtn.click();
-//      showBtn.click();
-//     }
-// }
 
 
 //Double Write String
@@ -313,20 +304,6 @@ function closeCodeBoard(openBtnID, closeBtnID, divID,codeID){
 	var sbmtBtn8 = document.getElementById('submit8');
 	sbmtBtn8.addEventListener('click', function(){stringSplit('input8','result8')});
 
-	// function stringSplit(stringInputID, stringOutputID){
-	// 	var inputText8 = document.getElementById(stringInputID).value;
-	// 	var tempStr = inputText8.split(" ");
-	// 	//Remove all extra blanks
-	// 	var finalStr = [];
-	// 	for(i=0; i<tempStr.length;i++){
-	// 		if(tempStr[i]!=""){
-	// 			finalStr.push(tempStr[i]);
-	// 		}
-	// 	}
-	// 	document.getElementById(stringOutputID).innerHTML = finalStr;
-	// }
-
-
 	//Alternative Solution of String Split: remove extra blanks first
 
 	// function stringSplit(stringInputID, stringOutputID){
@@ -358,6 +335,8 @@ function closeCodeBoard(openBtnID, closeBtnID, divID,codeID){
 
 	// 	document.getElementById(stringOutputID).innerHTML = finalStr.split(" ");
 	// }
+
+
 
 	//Remove start and end blanks
 	function rmEndWhiteSpace (sInput){

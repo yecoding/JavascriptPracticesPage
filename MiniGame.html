@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ye's JavaScript Practice</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
-	<script src="javascript/p5.min.js"></script>
-	<script src="javascript/addons/p5.dom.min.js"></script>
-	<script src="javascript/addons/p5.sound.min.js"></script>
-	<script src="javascript/GamePong.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/columnLayout.css">
+  <title>Ye's Vanilla JavaScript Practice</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+  <script src="javascript/p5.min.js"></script>
+  <script src="javascript/addons/p5.dom.min.js"></script>
+  <script src="javascript/addons/p5.sound.min.js"></script>
+  <script src="javascript/GamePong.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/columnLayout.css">
 </head>
 <body>
-	<header>
-    	<h1>Ye's Javascript Practices</h1>
-    	<p>A code newbie is learning to code :)</p>
-  	</header>
-
-  	<div class="navbar">
-        <a href="">About</a>
+  <header>
+    <div id="largeheader">
+      <h1>Ye's Vanilla Javascript Practices</h1>
+      <p>A code newbie is learning to code :)</p>
+    </div>
+    <div id="smallheader">
+      <a href="index.html"><img src="img/logo.svg" id="logo"></a>
+      <span id="opennav" onclick="toggleMenu()">&#9776;</span>
+    </div>
+    <div id="navbar">
+        <a href="index.html">About</a>
         <div class="dropdown">
-          <button class="dropdownBtn">Practices</button>
+          <button class="dropdownBtn active">Practices</button>
           <div class="dropdownContent">
-            <a href="index.html">String Functions</a>
-            <a href="MiniGame.html">Mini Games</a>
+            <a href="practices.html">String Functions</a>
+            <a href="#">Mini Games</a>
           </div>
         </div>
-  	</div>
+    </div>
+  </header>
 
-  	<!-- The introduction of the game -->
-  	<div id="introContent">
-	  	<div class="gameIntro">
+    <!-- The introduction of the game -->
+    <div id="introContent">
+      <div class="gameIntro">
         <div class="gamename">
-  	  		<h2>The Pong</h2>
-  	  		<p>Pong is one of the earliest computer games that ever created. It is a table tennis sports game featuring simple two-dimensional graphics. Here I am using p5.js to remake it.</p>
+          <h2>The Pong</h2>
+          <p>Pong is one of the earliest computer games that ever created. It is a table tennis sports game featuring simple two-dimensional graphics. Here I am using p5.js to remake it.</p>
         </div>
-	  		<div class="howToPlay">
-	  			<h4>How to Play</h4>
-	  			<p>The game is for two players. The left player will use keyboard W and S to control the paddle, while the right player will use the P and L keys. The ball will start flying from the center. 
-	  			</p>
-	  		</div>
-<!-- 	  		<button>Start Game</button> -->
-	  	</div>
-  	</div>
+        <div class="howToPlay">
+          <h4>How to Play</h4>
+          <p>The game is for two players. The left player will use keyboard W and S to control the paddle, while the right player will use the P and L keys. The ball will start flying from the center. 
+          </p>
+          <p>Please note that the game is for large screens. It may won't work correctively on mobile devices.</p>
+        </div>
+<!--        <button>Start Game</button> -->
+      </div>
+    </div>
 
-  	<!-- where the game is positioned -->
-  	<div id="playBtn"></div>
-  	<div id="pongGamePlay"></div>
+    <!-- where the game is positioned -->
+    <div id="playBtn"></div>
+    <div id="pongGamePlay"></div>
 
-
-  	<script src="javascript/pg.js"></script>
+    <footer>
+      Designed and Coded by Ye Wang. 
+    </footer>
+    <script src="javascript/pg.js"></script>
 </body>
 </html>

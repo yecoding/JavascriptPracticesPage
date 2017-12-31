@@ -27,7 +27,7 @@ var ballDia = 15;
 
 var ballX, ballY;
 
-var ballSpeedR = 8;
+var ballSpeedR = 6;
 
 var ballVx = 0;
 var ballVy = 0;
